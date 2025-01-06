@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --main-color: #82D4BB;
+  --secondary-color: #2B303A;
+  --third-color: #EEE5E9;
+  --fourth-color: #0B6E4F;
+}
+
+/* Default hidden state */
+.text-slide-up {
+  opacity: 0;
+  transform: translateY(30px); /* Start below */
+  transition: opacity 1s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+/* Animation when scrolled into view */
+.text-slide-up.visible {
+  opacity: 1;
+  transform: translateY(0); /* Slide to original position */
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); /* Start from the right side */
+  }
+  100% {
+    transform: translateX(0); /* Move to the default position */
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0); /* Start from the default position */
+  }
+  100% {
+    transform: translateX(100%); /* Move to the right side */
+  }
+}
+
+.slide-in {
+  animation: slideInFromRight 1s ease-out forwards; /* Slide in */
+}
+
+.slide-out {
+  animation: slideOutToRight 1s ease-in forwards; /* Slide out */
+}
+
+/* HomePage.css */
+.dynamic-word {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-in {
+  animation: swipe-in 1.5s forwards;
+}
+
+.swipe-out {
+  animation: swipe-out 1.5s forwards;
+}
+
+@keyframes swipe-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(15%);
+    opacity: 1;
+  }
+}
+
+@keyframes swipe-out {
+  0% {
+    transform: translateY(15%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80%);
+    opacity: 0;
+  }
+}
