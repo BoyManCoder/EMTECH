@@ -33,7 +33,7 @@ function ProgramPage() {
     return (
         <section id="program" className="w-screen font-robotoSlab bg-gradient-to-br from-gray-50 to-third py-10">
             <div className="container mx-auto px-6">
-                <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10">
+                <h1 className="text-2xl sm:text-4xl p-2 font-bold text-center text-gray-800 mb-10">
                     Our Programs
                 </h1>
                 <div className="grid gap-8 p-6 sm:grid-cols-2 lg:grid-cols-3">

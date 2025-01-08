@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/About'
+import Footer from './components/Footer'
 import HomePage from './components/HomePage'
 import MissionPage from './components/MissionPage'
 import NavBar from './components/NavBar'
@@ -14,6 +15,7 @@ function App() {
     <MissionPage/>
     <About/>
     <ProgramPage/>
+    <Footer/>
     </>
   )
 }
