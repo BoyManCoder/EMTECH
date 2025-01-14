@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MarqueeH from "./Marquee";
+import MarqueeH from "./Marquee"; 
 
 function HomePage() {
   const [dynamicWordIndex, setDynamicWordIndex] = useState(0);
