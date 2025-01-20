@@ -43,9 +43,9 @@ function Footer() {
                 </div>
               </div>
               <ul className="flex flex-col space-y-2 text-left sm:w-1/3">
-                <li><a href="#founders" className="hover:underline">Founders</a></li>
-                <li><a href="#mission" className="hover:underline">Mission</a></li>
-                <li><a href="#programs" className="hover:underline">Programs</a></li>
+                <li><a href="#found" className="hover:underline">Founders</a></li>
+                <li><a href="#about" className="hover:underline">Mission</a></li>
+                <li><a href="#program" className="hover:underline">Programs</a></li>
                 <li><a href="#contact" className="hover:underline">Contact</a></li>
               </ul>
             </div>

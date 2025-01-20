@@ -3,8 +3,9 @@ import Logo from "../assets/Logo.png"
 function MissionPage() {
   return (
     <>
-      {/* Desktop Layout */}
-      <section className="hidden md:flex w-screen h-full flex-row items-center justify-center bg-main px-10 py-4">
+     <div id="found">
+       {/* Desktop Layout */}
+       <section className="hidden md:flex w-screen h-full flex-row items-center justify-center bg-main px-10 py-4">
         <div className="h-96 w-1/5 bg-fourth"></div>
         <div className="h-96 m-4 w-3/5 bg-gray-100 px-6 py-4 flex flex-col items-center">
           <h1 className="w-full text-center font-robotoSlab text-white font-medium text-2xl bg-main">
@@ -42,6 +43,7 @@ function MissionPage() {
           <h1>Founder - Web Developer - Social Media Manager</h1>
         </div>
       </div>
+     </div>
     </>
   );
 }
