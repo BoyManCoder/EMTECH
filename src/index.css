@@ -111,3 +111,12 @@
 .fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
 }
+
+.slick-dots{
+  bottom: 0px !important;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}

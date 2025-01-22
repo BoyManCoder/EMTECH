@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         robotoSlab: ['"Roboto Slab"', 'serif'], // Added Roboto Slab font
       },
+      height: {
+        '100': '500px', // Added custom height of 200px for class h-100
+      },
     },
   },
   plugins: [],

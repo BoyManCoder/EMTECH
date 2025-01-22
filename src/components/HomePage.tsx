@@ -12,8 +12,8 @@ function HomePage() {
       setTimeout(() => {
         setDynamicWordIndex((prevIndex) => (prevIndex + 1) % dynamicWords.length);
         setIsSwiping(false);
-      }, 500); // Duration matches the swipe-out animation
-    }, 2500); // Duration includes swipe-out + display time
+      }, 500);
+    }, 2500); 
 
     return () => clearInterval(interval);
   }, [dynamicWords.length]);
@@ -44,7 +44,7 @@ function HomePage() {
         <div className="w-screen h-screen font-robotoSlab flex md:flex-row flex-col relative">
           {/* Left Column */}
           <div className="w-full sm:w-1/2 sm:h-2/3 h-1/3 flex flex-col justify-start items-center sm:items-start sm:ml-20 p-4 ">
-            <h1 className="text-slide-up mt-14 text-center sm:text-left text-4xl md:mb-4 lg:mb-0 overflow-y-hidden lg:text-5xl lg:h-1/5 w-full">
+            <h1 className="text-slide-up my-6 lg:mt-8 text-center sm:text-left text-3xl md:mb-4 lg:mb-0 overflow-y-hidden lg:text-5xl h-1/6 w-full">
               Education Has No{" "}
               <span
                 className={`p-1 dynamic-word ${
