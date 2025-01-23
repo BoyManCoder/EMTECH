@@ -2,23 +2,26 @@ import { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Lightbulb from "../components/Lightbulb.tsx";
+import Lightning from "../components/Lightning.tsx";
+import Sunrise from "../components/Sunrise.tsx"
 
 // Card Data
 const cards = [
     {
         title: "Educate",
         description: "This is the description for the first card. It provides some meaningful content and insights.",
-        image: "/path/to/image1.jpg",
+        image: Lightbulb, // Using the component directly for rendering inline
     },
     {
         title: "Empower",
         description: "This is the description for the second card. It explains another aspect of the mission.",
-        image: "/path/to/image2.jpg",
+        image: Lightning,
     },
     {
         title: "Inspire",
         description: "This is the description for the third card. It focuses on motivating others to achieve greatness.",
-        image: "/path/to/image3.jpg",
+        image: Sunrise,
     },
 ];
 
@@ -82,11 +85,15 @@ const About = () => {
                             style={{ margin: "0 15px" }}
                         >
                             <div className="h-1/2 w-full flex items-center justify-center">
-                                <img
-                                    src={card.image}
-                                    alt={card.title}
-                                    className="object-cover bg-main h-40 sm:h-full w-full sm:w-2/3"
-                                />
+                                {typeof card.image === "function" ? (
+                                    <card.image /> // Render the Lightbulb component as SVG
+                                ) : (
+                                    <img
+                                        src={card.image}
+                                        alt={card.title}
+                                        className="object-cover bg-main h-40 sm:h-full w-full sm:w-2/3"
+                                    />
+                                )}
                             </div>
                             <div className="flex-grow w-full text-center p-6 flex flex-col">
                                 <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
@@ -111,11 +118,15 @@ const About = () => {
                             style={{ margin: "0 15px" }}
                         >
                             <div className="h-1/2 w-full flex items-center justify-center">
-                                <img
-                                    src={card.image}
-                                    alt={card.title}
-                                    className="object-cover bg-main h-40 sm:h-full w-full sm:w-2/3"
-                                />
+                                {typeof card.image === "function" ? (
+                                    <card.image /> // Render the Lightbulb component as SVG
+                                ) : (
+                                    <img
+                                        src={card.image}
+                                        alt={card.title}
+                                        className="object-cover bg-main h-40 sm:h-full w-full sm:w-2/3"
+                                    />
+                                )}
                             </div>
                             <div className="flex-grow w-full text-center p-6 flex flex-col">
                                 <h2 className="text-2xl font-bold mb-3">{card.title}</h2>

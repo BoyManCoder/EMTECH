@@ -1,3 +1,5 @@
+import JSone from "../assets/Javascript.png";
+
 interface Course {
     title: string;
     description: string;
@@ -11,7 +13,7 @@ function ProgramPage() {
             title: "Beginner Web Development",
             description:
                 "Learn the basics of HTML, CSS, and JavaScript. Create your first webpage in just a few lessons.",
-            image: "/assets/web-dev.jpg",
+            image: JSone,
             link: "/courses/web-development",
         },
         {
@@ -42,12 +44,14 @@ function ProgramPage() {
                             key={index}
                             className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
                         >
-                            <div className="h-48 w-full">
+                            <div className="relative h-48 w-full">
                                 <img
                                     src={course.image}
                                     alt={course.title}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover shadow-lg"
                                 />
+                                {/* Optional overlay for shadow effect */}
+                                <div className="absolute inset-0 bg-black opacity-30"></div>
                             </div>
                             <div className="p-6">
                                 <h2 className="text-2xl font-semibold text-gray-800 mb-3">

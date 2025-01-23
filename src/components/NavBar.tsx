@@ -1,3 +1,5 @@
+import Logo from "../assets/Logo.png"
+
 function NavBar() {
     return (
         <>
@@ -7,7 +9,8 @@ function NavBar() {
                     </div>
                 <nav className="w-full flex flex-col font-robotoSlab justify-center items-center">
                     <div className="text-3xl p-4 tracking-widest">
-                        <div className="w-full">
+                        <div className="w-screen h-auto flex flex-row justify-center items-center">
+                            <img src={Logo} className="h-10 negative mx-4" />
                             <h1>EMTECH</h1>
                         </div>
                     </div>
