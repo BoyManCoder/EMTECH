@@ -13,22 +13,22 @@ function ProgramPage() {
             title: "Beginner Web Development",
             description:
                 "Learn the basics of HTML, CSS, and JavaScript. Create your first webpage in just a few lessons.",
-            image: JSone,
-            link: "/courses/web-development",
+            image: JSone,  
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSeIK4JeMWsMJ1FKL6pYY95_WEMUd3VaAW6FlMqkVFVMgHh1AQ/viewform?usp=sf_link",  
+        },
+        {
+            title: "CCC Prep Course",
+            description:
+                "Dive into Waterloo's 2024 CCC to prep for 2025",
+            image: "/CCC-logo.webp",
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSfsIcQmFYUH8Gl4uF6ZZc1rQIgadcrPSF_vVymlkm6np39wCg/viewform?usp=header", // Link for CCC prep course
         },
         {
             title: "JavaScript Essentials",
             description:
-                "Dive deep into JavaScript with this essential course. Perfect for aspiring developers.",
-            image: "/assets/js-essentials.jpg",
-            link: "/courses/javascript-essentials",
-        },
-        {
-            title: "React for Beginners",
-            description:
-                "A step-by-step guide to building modern web applications using React.js.",
-            image: "/assets/react-course.jpg",
-            link: "/courses/react-for-beginners",
+                "Step by step for JS Noobies, coming in FEB sign up!",
+            image: "/JSE.jpeg",  
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSfOPUv1ZMzX4Ih-wbUg7hxhJnTNa3Hi81zNg_PfXyUsdIKLjQ/viewform?usp=header", // Link for JS Essentials course
         },
     ];
 

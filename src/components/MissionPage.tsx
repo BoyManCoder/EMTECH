@@ -20,7 +20,7 @@ function MissionPage() {
             designs and optimizes platforms to ensure seamless functionality.
             In his role as a social media manager, Hani crafts strategies to
             enhance the brand’s online presence. His expertise and
-            forward-thinking approach continue to drive EmTech’s success in the
+            forward-thinking approach continue to drive EMTECH’s success in the
             digital space.
           </p>
         </div>

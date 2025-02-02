@@ -16,7 +16,7 @@ function Contact() {
         <div className="w-full h-40 flex flex-row justify-center items-center">
           {/* Email Button */}
           <a
-            href="mailto:example@example.com"
+            href="mailto:emtech.to@gmail.com"
             className="w-20 h-20 mx-6 bg-gray-200 border border-gray-300 shadow-lg rounded-lg flex items-center justify-center transform hover:scale-105 transition-transform"
             aria-label="Email"
           >

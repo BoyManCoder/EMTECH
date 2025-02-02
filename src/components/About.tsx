@@ -109,13 +109,12 @@ const About = () => {
                 <h1 className="text-center text-5xl mb-8 h-14">Mission</h1>
                 <div
                     ref={cardsRef}
-                    className="w-full h-full p-10 flex flex-col sm:flex-row justify-evenly items-center sm:items-start sm:space-y-0 space-y-6 space-x-12"
+                    className="w-full h-full p-10 flex flex-col sm:flex-row justify-evenly items-center sm:items-start gap-6"  // Use 'gap' for spacing between cards
                 >
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className="h-96 w-4/5 p-5 sm:w-80 bg-soft rounded-xl overflow-hidden flex flex-col shadow-lg opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out"
-                            style={{ margin: "0 15px" }}
+                            className="mission-card h-96 w-80 p-5 bg-soft rounded-xl overflow-hidden flex flex-col shadow-lg opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out"
                         >
                             <div className="h-1/2 w-full flex items-center justify-center">
                                 {typeof card.image === "function" ? (

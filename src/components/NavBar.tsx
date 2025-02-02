@@ -28,6 +28,9 @@ function NavBar() {
                         <a href="#contact">
                             <h3>Contact</h3>
                         </a>
+                        <a href="#events">
+                            <h3>Events</h3>
+                        </a>
 </div>
 
                     </div>

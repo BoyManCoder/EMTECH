@@ -6,6 +6,7 @@ import HomePage from './components/HomePage'
 import MissionPage from './components/MissionPage'
 import NavBar from './components/NavBar'
 import ProgramPage from './components/ProgramPage'
+import Events from './components/Events'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <About/>
     <Contact/>
     <ProgramPage/>
+    <Events/>
     <Footer/>
     </>
   )
