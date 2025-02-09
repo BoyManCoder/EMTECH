@@ -10,17 +10,17 @@ import Sunrise from "../components/Sunrise.tsx"
 const cards = [
     {
         title: "Educate",
-        description: "This is the description for the first card. It provides some meaningful content and insights.",
+        description: "At EMTECH, we provide cutting-edge resources and knowledge, ensuring that every individual has the tools to learn and master the digital landscape.",
         image: Lightbulb, // Using the component directly for rendering inline
     },
     {
         title: "Empower",
-        description: "This is the description for the second card. It explains another aspect of the mission.",
+        description: "We empower individuals by equipping them with the skills to take on tech roles with their new experience and drive change with what we teach.",
         image: Lightning,
     },
     {
         title: "Inspire",
-        description: "This is the description for the third card. It focuses on motivating others to achieve greatness.",
+        description: "Through collaborative hands-on experiences, we inspire the next generation of tech leaders and aid them in their dreams.",
         image: Sunrise,
     },
 ];

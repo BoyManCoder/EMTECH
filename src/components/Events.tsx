@@ -19,13 +19,13 @@ function Events() {
         desc: "Prepare for the Canadian Computing Competition with Hani, we went through the 2024 previous problems.",
       },
       {
-        date: "February 2025 [Coming Soon]",
+        date: "March 2025 [Coming Soon]",
         title: "Javascript Essentials",
         img: "/JSE.jpeg",  // Add image path
         desc: "Learn the fundamentals of JavaScript, one of the most popular programming languages.",
       },
       {
-        date: "March 2025 [Coming Soon]",
+        date: "April 2025 [Coming Soon]",
         title: "React Basics",
         img: "/RE.png",  // Add image path
         desc: "Get to know the basics of React, a powerful JavaScript library for building UIs.",

@@ -17,7 +17,7 @@ function NavBar() {
                     <div className="w-full flex justify-center items-center border-gray-500 border-b-2 bg-main underline font-medium text-secondary">
                     <div className="w-10/12 md:w-2/5 flex flex-row justify-around p-1">
                         <a href="#found">
-                            <h3>Founders</h3>
+                            <h3>Founder</h3>
                         </a>
                         <a href="#about">
                             <h3>Mission</h3>

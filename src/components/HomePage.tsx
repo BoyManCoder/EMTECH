@@ -61,13 +61,12 @@ function HomePage() {
               Learn More
             </button>
           </div>
-
-          {/* Right Column */}
           <div className="w-full sm:w-1/2 sm:h-2/3 h-1/3 flex flex-col justify-top items-center p-4 relative">
-            <div className="w-4/5 h-full sm:h-2/3 sm:mt-16 bg-main"></div>
+          <div className="w-4/5 h-full sm:h-2/3 sm:mt-16">
+            <img src="public/Home.jpeg" className="object-cover w-full h-full negative" />
+            </div>
           </div>
 
-          {/* Black Box Positioned Higher */}
           <div className="absolute flex overflow-y-hidden justify-center items-center bottom-40 w-full h-20 bg-third z-0">
             <MarqueeH />
           </div>
