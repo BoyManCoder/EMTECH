@@ -12,6 +12,7 @@ const founders = [
     instagram: "https://www.instagram.com/emtech_stem/",
     github: "https://github.com/BoyManCoder",
     email: "emtech.to@gmail.com",
+    image: "/Hani.jpg",
   },
   {
     name: "Sandro Shtikov",
@@ -20,6 +21,7 @@ const founders = [
     instagram: "#",
     github: "https://github.com/AirWard1234",
     email: "sandro.shtikov2@gmail.com",
+    image: "/Sadnro.jpg"
   },
 ];
 
@@ -34,7 +36,9 @@ function MissionPage() {
       <div id="found">
         {/* Desktop Layout (Static) */}
         <section className="hidden md:flex w-screen h-full flex-row items-center justify-center bg-main px-10 py-4">
-          <div className="h-96 w-1/5 bg-fourth"></div>
+          <div className="h-96 w-1/5 bg-fourth">
+            <img src="/Hani.jpg" className="w-full h-full object-cover"/>
+          </div>
           <div className="h-96 m-4 w-3/5 bg-gray-100 px-6 py-4 flex flex-col items-center">
             <h1 className="w-full text-center font-robotoSlab text-white font-medium text-2xl bg-main">
               Founder - Web Developer - Social Media Manager
@@ -87,7 +91,7 @@ function MissionPage() {
               </ul>
               <div className="w-full my-4 flex flex-row justify-center items-center">
                 <div className="w-1/2 h-60">
-                  <img className="h-full w-5/6 bg-main" />
+                  <img className="h-full w-5/6 object-cover " src="/Sadnro.jpg" />
                 </div>
                 <div className="w-1/2 h-60 flex flex-col text-md items-start justify-top">
                   <h1 className="font-bold">Sandro Shtikov</h1>
@@ -118,15 +122,17 @@ function MissionPage() {
                   <img src={Logo} className="w-full" alt="Logo" />
                 </div>
                 <div className="flex flex-col w-2/3 h-full items-center font-bold justify-center">
-                  <p className="w-full my-1 bg-secondary text-white px-3">
+                  <p className="w-full bg-secondary text-white px-3">
                     {founder.name}
                   </p>
-                  <Marquee className="w-full my-1 bg-secondary text-white flex">
+                  <Marquee className="w-full bg-secondary text-white flex">
                     {founder.role}
                   </Marquee>
                 </div>
               </div>
-              <div className="w-full h-3/5"></div>
+              <div className="w-full h-3/5">
+                <img src={founder.image} className="h-full w-full object-cover"/>
+              </div>
               <div className="w-full h-1/6 flex flex-row bg-secondary justify-around items-center custom-shadow">
                 <FaGithub
                   className="w-1/4 h-1/2 transition-all cursor-pointer"

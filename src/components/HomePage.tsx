@@ -62,8 +62,8 @@ function HomePage() {
             </button>
           </div>
           <div className="w-full sm:w-1/2 sm:h-2/3 h-1/3 flex flex-col justify-top items-center p-4 relative">
-          <div className="w-4/5 h-full sm:h-2/3 sm:mt-16">
-            <img src="public/Home.jpeg" className="object-cover w-full h-full negative" />
+          <div className="w-4/5 h-full sm:h-4/5 sm:mt-16"> 
+            <img src="/Slide1.jpeg" className="w-full h-full rounded-lg" />
             </div>
           </div>
 
