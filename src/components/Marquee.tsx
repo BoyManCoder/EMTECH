@@ -22,7 +22,7 @@ function MarqueeH() {
 
   const marqueeItems = [
     { icon: likeIcon, award: "~7.5k Followers" },
-    { icon: capIcon, award: "~100 Students Enrolled" },
+    { icon: capIcon, award: "~500 Students Reached" },
     {
       icon: markIcon,
       award: "5+ Open positions (More Info)",
